@@ -1,14 +1,12 @@
 import React, { useState } from 'react'
-import { Typography,TextField,Button } from '@mui/material'
+import { Typography,Button } from '@mui/material'
 
 const Counter = () => {
     var[count,setCount] = useState(0);
-    const add = ()=>{
-        console.log("add btn clicked");
+    const add = ()=>{  
         setCount(count+1)
     }
     const sub = ()=>{
-        console.log("sub btn clicked");
         setCount(count-1)
     }
   return (

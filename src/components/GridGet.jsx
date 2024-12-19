@@ -9,7 +9,7 @@ import axios from 'axios';
 const GridGet = () => {
     var[products,setProducts] = useState([]);
     useEffect(()=>{
-        axios.get(" https://fakestoreapi.com/products")
+        axios.get("https://fakestoreapi.com/products")
         .then((response)=>{
             console.log(response)
             setProducts(response.data);
